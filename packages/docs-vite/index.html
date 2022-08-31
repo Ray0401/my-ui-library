@@ -5,17 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <div id="app"></div>
-    <link rel="stylesheet" href="../../dist/assets/entry.css" />
   </head>
+
   <body>
-    <script src="../../node_modules/vue/dist/vue.global.js"></script>
-    <script src="../../dist/smarty-ui.iife.js"></script>
-    <script>
-      console.log('111');
-      const { createApp } = Vue;
-      console.log('vue', Vue);
-      console.log('SmartyUI', SmartyUI);
+    <h1>🔨 SmartyUI Demo111</h1>
+    <div id="app"></div>
+    <script type="module">
+      import style from 'ui-vite-ray/dist/assets/entry.css';
+      import { createApp } from 'vue/dist/vue.esm-bundler.js';
+      import SmartyUI, { SFCButton, JSXButton, SButton } from 'ui-vite-ray/dist/smarty-ui.mjs';
+
       createApp({
         template: `
         <div style="margin-bottom:20px;">
@@ -54,7 +53,7 @@
         </div>
     `,
       })
-        .use(SmartyUI.default)
+        .use(SmartyUI)
         .mount('#app');
     </script>
   </body>
