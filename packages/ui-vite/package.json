@@ -3,6 +3,7 @@
   "version": "1.0.5",
   "description": "",
   "main": "index.js",
+  "homepage": "https://my-ui-library.vercel.app",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Ray0401/my-ui-library"
